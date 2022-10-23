@@ -26,11 +26,10 @@ api_key = '8a7257a890b34f7599bfd6f0049b0398';
 
 api_url = 'https://ipgeolocation.abstractapi.com/v1/?api_key=' + api_key
 
+def get_ip_geolocation_data():
 
-get_ip_geolocation_data(ip_address):
+ 
 
+   response = requests.get(api_url)
 
-    response = requests.get(api_url + "&ip_address=" + ip_address)
-
-    print(response.content)
-    
+   print(response.content)
