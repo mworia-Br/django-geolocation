@@ -20,10 +20,7 @@ def home(request):
    return HttpResponse("Welcome! You are visiting from: {}".format(ip))
 
 
-
-
 api_key = '8a7257a890b34f7599bfd6f0049b0398';
-
 api_url = 'https://ipgeolocation.abstractapi.com/v1/?api_key=' + api_key
 
 def get_ip_geolocation_data():
